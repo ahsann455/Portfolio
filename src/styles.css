@@ -127,14 +127,65 @@ img.socialIcon {
   
 }
 
-/* add a slide in animation */
-@keyframes slideIn {
-  from {
-    transform: translateY(5%);
-    opacity: 0;
+.animated-image {
+  animation: slideInAnimation 9s linear forwards;
+  margin-left: 80px;
+}
+
+@keyframes slideInAnimation {
+  0% {
+    transform: translateX(-100%);
   }
-  to {
-    transform: translateY(0);
-    opacity: 1;
+  100% {
+    transform: translateX(0);
   }
+}
+
+/* styles.css */
+
+/* Modern Education Section Styles */
+.light {
+  background-color: #f9f9f9;
+  padding: 4rem 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #4e567e;
+  text-align: center; /* Center the title */
+  margin-bottom: 2rem;
+}
+
+.education-container {
+  display: flex; /* Use flex to align items horizontally */
+  justify-content: center; /* Center the items horizontally */
+  gap: 1rem; /* Gap between the squared cards */
+}
+
+.education-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 240px; /* Set a fixed width for the squared cards */
+  height: 240px; /* Set a fixed height to make them squared */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the content vertically */
+}
+
+.education-item h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #4e567e;
+  margin-bottom: 1rem;
+}
+
+.education-info p {
+  margin: 0.5rem 0;
+}
+
+.education-location {
+  color: #888;
 }
