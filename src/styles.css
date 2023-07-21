@@ -5,8 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
 
 html {
-  scroll-behavior: smooth;
-}
+  scroll-behavior: smooth; /* For smooth scrolling */}
 body {
   font-family: "Montserrat", sans-serif;
   height: 100%;
@@ -124,4 +123,18 @@ a:hover {
 img.socialIcon {
   height: 30px;
   width: 30px;
+
+  
+}
+
+/* add a slide in animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(5%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
