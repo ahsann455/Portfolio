@@ -1,0 +1,191 @@
+/**
+* CSS file to hold styles that apply across the application
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
+
+html {
+  scroll-behavior: smooth; /* For smooth scrolling */}
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+  width: 100%;
+}
+
+div#main {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+section {
+  position: relative;
+  width: 100vw;
+}
+
+section.min-height {
+  min-height: 100vh;
+}
+
+section.padding {
+  padding: 5rem 0;
+}
+
+section img.background {
+  height: 100%;
+  left: 50%;
+  object-fit: cover;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, 0);
+  width: 100vmax;
+  z-index: -1;
+}
+
+h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 7rem;
+  font-weight: 400;
+  line-height: 0.8;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 1rem;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+p.large {
+  font-size: 24px;
+}
+
+p.small {
+  font-size: 15px;
+}
+
+hr {
+  margin: 2.5rem;
+}
+
+li {
+  line-height: 1.7;
+}
+
+li::marker {
+  color: #4e567e;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4e567e;
+}
+
+.container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 330px 300px;
+  margin: 20px auto;
+}
+
+.container .box {
+  border-radius: 10px;
+  border: 1px solid rgb(204, 204, 204);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+img.socialIcon {
+  height: 30px;
+  width: 30px;
+
+  
+}
+
+.animated-image {
+  animation: slideInAnimation 9s linear forwards;
+  margin-left: 80px;
+}
+
+@keyframes slideInAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* styles.css */
+
+/* Modern Education Section Styles */
+.light {
+  background-color: #f9f9f9;
+  padding: 4rem 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #4e567e;
+  text-align: center; /* Center the title */
+  margin-bottom: 2rem;
+}
+
+.education-container {
+  display: flex; /* Use flex to align items horizontally */
+  justify-content: center; /* Center the items horizontally */
+  gap: 1rem; /* Gap between the squared cards */
+}
+
+.education-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 240px; /* Set a fixed width for the squared cards */
+  height: 240px; /* Set a fixed height to make them squared */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the content vertically */
+}
+
+.education-item h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #4e567e;
+  margin-bottom: 1rem;
+}
+
+.education-info p {
+  margin: 0.5rem 0;
+}
+
+.education-location {
+  color: #888;
+}
